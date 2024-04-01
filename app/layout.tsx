@@ -21,6 +21,7 @@ export default function RootLayout({
         appearance={{
           layout: {
             logoImageUrl: "/icons/shoom-logo.png",
+            socialButtonsVariant: "iconButton",
           },
           variables: {
             colorText: "#FFF",
