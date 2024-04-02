@@ -1,8 +1,12 @@
+"use client";
+
+import { useUser } from "@clerk/nextjs";
+
 const Meeting = ({ params }: { params: { id: string } }) => {
+  const { user, isLoaded } = useUser();
+
   return (
-    <div>
-      <h1>meeting room: #{params.id}</h1>
-    </div>
+    
   );
 };
 
