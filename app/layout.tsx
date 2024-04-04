@@ -5,6 +5,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 
 import "@stream-io/video-react-sdk/dist/css/styles.css";
+import "react-datepicker/dist/react-datepicker.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,8 +13,8 @@ export const metadata: Metadata = {
   title: "Shoom",
   description: "Video calling app",
   icons: {
-    icon: "/icon/logo.svg"
-  }
+    icon: "/icon/logo.svg",
+  },
 };
 
 export default function RootLayout({
