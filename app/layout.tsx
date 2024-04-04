@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: "Shoom",
   description: "Video calling app",
   icons: {
-    icon: "/icon/logo.svg",
+    icon: "/icons/logo.svg",
   },
 };
 
@@ -39,7 +39,10 @@ export default function RootLayout({
           },
         }}
       >
-        <body className={`${inter.className} bg-dark-2`}>
+        <body
+          className={`${inter.className} bg-dark-2`}
+          suppressHydrationWarning={true}
+        >
           {children}
           <Toaster />
         </body>

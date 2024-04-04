@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Shoom",
   description: "Video calling app",
   icons: {
-    icon: "/icon/logo.svg",
+    icon: "/icons/logo.svg",
   },
 };
 
