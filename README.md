@@ -4,7 +4,7 @@ This project replicates Zoom, a widely used video conferencing tool.
 
 ## Demo
 
-Link to a live demo: [Live Demo](https://glorify-liart.vercel.app/)
+Link to a live demo: [Live Demo](https://shoom-kappa.vercel.app/)
 
 ## Screenshots
 
