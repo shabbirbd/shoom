@@ -52,14 +52,15 @@ const CallList = ({ type }: { type: "ended" | "upcoming" | "recordings" }) => {
         const recordings = callData
           .filter((call) => call.recordings.length > 0)
           .flatMap((call) => call.recordings);
-
         setRecordings(recordings);
       };
+
+      if (type === "recordings") fetchRecordings();
+
     } catch (error) {
       toast({ title: "Try again later" });
     }
 
-    if (type === "recordings") fetchRecordings();
   }, [type, callRecordings]);
 
   const calls = getCalls();
@@ -70,9 +71,9 @@ const CallList = ({ type }: { type: "ended" | "upcoming" | "recordings" }) => {
   return (
     <div className="grid grid-cols-1 gap-5 xl:grid-cols-2">
       {calls && calls.length > 0 ? (
-        calls.map((meeting: Call | CallRecording) => (
+        calls.map((meeting: Call | CallRecording, i) => (
           <MeetingCard
-            key={(meeting as Call).id}
+            key={i}
             icon={
               type === "ended"
                 ? "/icons/previous.svg"

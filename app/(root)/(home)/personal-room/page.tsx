@@ -31,7 +31,6 @@ const PersonalRoom = () => {
   const { toast } = useToast();
   const client = useStreamVideoClient();
   const { call } = useGetCallById(meetingId!);
-
   const router = useRouter();
 
   const startRoom = async () => {
